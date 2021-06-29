@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel | HTML5 Development Server & Build Tool With Webpack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This is where the CSS tags go from the output of the chunks defined in "new HTMLWebpackPlugin" -->
+    <%= htmlWebpackPlugin.tags.headTags %>
+  </head>
+  <body class="carousel">
+    <header class="max-w-lg mx-auto">
+      <div class="w-24 mx-auto">
+        <img src="<%= require('Assets/images/icon.png').default %>">
+      </div>
+    </header>
+
+    <h1 class="page-title">Carousel Demo</h1>
+    
+    <div class="demo-carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="carousel-demo-slide">
+            <img data-src="<%= require('Assets/images/furball-0.jpg').default %>" class="swiper-lazy" class="image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="carousel-demo-slide">
+            <img data-src="<%= require('Assets/images/furball-1.jpg').default %>" class="swiper-lazy" class="image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="carousel-demo-slide">
+            <img data-src="<%= require('Assets/images/furball-2.jpg').default %>" class="swiper-lazy" class="image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+    </div>
+
+
+    <!-- This is where the JS tags go from the output of the chunks defined in "new HTMLWebpackPlugin" -->
+    <%= htmlWebpackPlugin.tags.bodyTags %>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Development Server & Build Tool With Webpack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This is where the CSS tags go from the output of the chunks defined in "new HTMLWebpackPlugin" -->
+    <%= htmlWebpackPlugin.tags.headTags %>
+  </head>
+  <body class="home">
+    <header class="max-w-lg mx-auto">
+      <div class="w-24 mx-auto">
+        <img src="<%= require('Assets/images/icon.png').default %>">
+      </div>
+    </header>
+
+    <div class="bg-white rounded border-green-400 border-4 max-w-lg mt-8 p-8 mx-auto">
+
+      <h1 class="greeting">
+        Hello World! <strong>This is the home page!</strong>
+      </h1>
+      
+    </div>
+    
+    <!-- This is where the JS tags go from the output of the chunks defined in "new HTMLWebpackPlugin" -->
+    <%= htmlWebpackPlugin.tags.bodyTags %>
+  </body>
+</html>

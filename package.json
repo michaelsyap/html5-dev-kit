@@ -1,0 +1,50 @@
+{
+  "name": "html5-dev-kit",
+  "version": "1.0.0",
+  "description": "A webpack-based HTML5 development kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack --config webpack.prod.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "autoprefixer": "^10.2.3",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "cssnano": "^4.1.10",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.9",
+    "postcss-calc": "^8.0.0",
+    "postcss-loader": "^4.2.0",
+    "postcss-mixins": "^7.0.2",
+    "postcss-nested": "^5.0.3",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-rem": "^1.1.5",
+    "postcss-simple-vars": "^6.0.2",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.2",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-middleware": "^4.0.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "swiper": "^6.4.15"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "iOS >= 8",
+    "Safari >= 8"
+  ],
+  "sideEffects": [
+    "*.css"
+  ]
+}

@@ -1,0 +1,19 @@
+.page-title {
+  @apply text-3xl;
+  @mixin set-font-family;
+  color: $colorPrimary;
+  text-align: center;
+}
+
+.demo-carousel {
+  width: 500px;
+  background: $colorPrimary;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-demo-slide {
+  position: relative;
+  min-height: 500px;
+}
